@@ -47,8 +47,8 @@ export default function RecipeReviewCard(props) {
             <MoreVertIcon />
           </IconButton>
         }
-        title="My example note!"
-        //{props.title}
+        
+        title="My title"
         subheader="September 22,2023"
       />
       <CardMedia
@@ -59,8 +59,8 @@ export default function RecipeReviewCard(props) {
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-        {/* props.question */}
-          This is your example note!
+        { props.title} 
+          
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -83,9 +83,8 @@ export default function RecipeReviewCard(props) {
         <CardContent>
           <Typography paragraph>Answer:</Typography>
           <Typography paragraph>
-          {/* props.answer*/}
-            This is A simple example showing the preview of what your note will look like,cool isn't it?, have fun taking notes and hopefully get that A 
-            you always knew you can get!
+          { props.content}
+           
           </Typography>
           
           

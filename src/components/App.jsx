@@ -1,16 +1,17 @@
-import React from "react";
+import React ,{useState}from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import RecipeReviewCard from "./RecipeReviewCard";
+import CreateArea from "./CreateArea";
 
 function App() {
-  // const [notes, setNotes] = useState([]);
+   const [notes, setNotes] = useState([]);
 
-  // function addNote(newNote) {
-  //   setNotes(prevNotes => {
-  //     return [...prevNotes, newNote];
-  //   });
-  // }
+  function addNote(newNote) {
+    setNotes(prevNotes => {
+      return [...prevNotes, newNote];
+    });
+  }
 
   // function deleteNote(id) {
   //   setNotes(prevNotes => {
@@ -23,7 +24,17 @@ function App() {
   return (
     <div>
       <Header />
-      <RecipeReviewCard/>
+      <CreateArea onAdd={addNote} />
+     
+      {notes.map(noteItem => {
+        return (
+          <RecipeReviewCard
+            title={noteItem.title}
+            content={noteItem.content}
+          />
+        );
+      })}
+      <RecipeReviewCard />
       <Footer />
     </div>
   );
