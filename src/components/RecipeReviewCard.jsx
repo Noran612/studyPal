@@ -36,7 +36,7 @@ export default function RecipeReviewCard(props) {
   };
 
   return (
-    <Card className="card"sx={{ maxWidth: 345 }}>
+    <Card className="card" sx={{ maxWidth: 345, height: expanded ? 'auto' : 400 }}>
       <CardHeader
         avatar={
           <Avatar alt="Study Girl" src={studyGirlImage} aria-label="recipe"/>
