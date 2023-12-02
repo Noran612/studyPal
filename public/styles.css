@@ -112,3 +112,164 @@
     transform: scale(1.05);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+
+  /* Add these styles to your existing style.css or create a new CSS file */
+
+/* Styles for the sign-in form */
+.sign-in-container {
+  margin: 50px auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sign-in-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-container input[type="email"],
+.sign-in-container input[type="password"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.sign-in-container button {
+  padding: 12px;
+  background-color: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-container button:hover {
+  background-color: #e0a800;
+}
+
+.sign-in-container p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.sign-in-container p a {
+  color: #f5ba13;
+  text-decoration: none;
+}
+
+.sign-in-container p a:hover {
+  text-decoration: underline;
+}
+
+/* Add these styles to your existing style.css or create a new CSS file */
+
+/* Styles for the sign-up form */
+.sign-up-container {
+  margin: 50px auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sign-up-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sign-up-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-container input[type="email"],
+.sign-up-container input[type="password"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.sign-up-container button {
+  padding: 12px;
+  background-color: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-container button:hover {
+  background-color: #e0a800;
+}
+.sign-up-container p a {
+  color: #f5ba13;
+  text-decoration: none;
+}
+.sign-up-container p a:hover {
+  text-decoration: underline;
+}
+/* Add these styles to your existing style.css or create a new CSS file */
+
+/* Styles for the button container */
+.button-container {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 20px; /* Adjust the distance from the right as needed */
+  z-index: 1; /* Ensure button is above other elements */
+}
+/* Styles for the Sign Out button */
+.button-container button {
+  padding: 12px 24px;
+  background-color: #f5ba13; /* Yellow-orange shade */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.button-container button:hover {
+  background: linear-gradient(
+    45deg,
+    #f5ba13,
+    #ff813f
+  ); /* Yellow to orange gradient */
+  background-size: 200% 200%;
+  animation: gradientEffect 0.5s ease-in-out forwards;
+}
+
+/* Animation for hover effect */
+@keyframes gradientEffect {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+.button-container button {
+  padding: 16px 32px; /* Increase padding for larger button */
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhance shadow for emphasis */
+}
